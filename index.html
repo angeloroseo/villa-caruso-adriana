@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1, maximum-scale=1">
+  <title>Villa Caruso - luxury</title>
+  <meta name="keywords" content="B&B">
+  <meta name="description" content="Villa Caruso: villa indipendente a Massa Lubrense con piscina a sfioro, spa, splendida vista mare, 3 camere, 2 bagni, giardino e colazione continentale.">
+  <meta name="author" content="Sascha Guida">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Font Playfair Display -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Stile per overlay, heading, nav e leggibilità -->
+  <style>
+    /* Banner overlay più scuro */
+    .banner_main {
+      position: relative;
+      overflow: hidden;
+    }
+    .banner_main::before {
+      content: "";
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+    .banner_main .text-bg,
+    .banner_main .padding_lert {
+      position: relative; z-index: 2;
+      color: #fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+    }
+    /* sfondo semi-trasparente per heading */
+    .banner_main h1, .banner_main span {
+      display: inline-block;
+      padding: 0.2em 0.4em;
+      background: rgba(0,0,0,0.5);
+      border-radius: 0.2em;
+    }
+    .banner_main h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.3em;
+    }
+    .banner_main span {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-style: italic;
+      color: #c8ad7f;
+      margin-bottom: 1em;
+    }
+    /* Nav links bianchi e in grassetto */
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-weight: 700;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #c8ad7f !important;
+    }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="main-layout">
+
+  <header>
+    <div class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#room">Stanze</a>
+                <a class="nav-link" href="#contact">Contatti</a>
+                <a class="nav-link disabled">Extra</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner_main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-bg">
+            <div class="padding_lert mt-5 text-center">
+              <h1>Villa Caruso</h1>
+              <span>luxury</span>
+              <p>Immersa nel cuore della Penisola Sorrentina, Villa Caruso è una dimora ristrutturata di recente, dotata di piscina a sfioro, spa e ampio giardino mediterraneo, ideale per un soggiorno esclusivo.</p>
+              <a class="btn btn-light mt-3" href="#contact">Contattaci</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- choose  section -->
+  <div class="choose">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="choose_box">
+            <div class="titlepage">
+              <h2><span class="text_normal text-primary">Scegli il</span><br>perfetto alloggio</h2>
+            </div>
+            <p>Scoprite la perfetta combinazione tra eleganza e comfort: tre camere da letto, due bagni moderni, cucina completamente attrezzata e spazi comuni luminosi con vista sul mare per un'esperienza indimenticabile.</p>
+            <a class="read_more" href="./room.html">Vedi di più</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-12"><div class="img_box"><figure><img src="./img/img1.jpg" alt="#" /></figure></div></div>
+            <div class="col-md-6"><div class="img_box"><figure><img src="./img/img2.jpg" alt="#" /></figure></div></div>
+            <div class="col-md-6"><div class="img_box"><figure><img src="./img/img3.jpg" alt="#" /></figure></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end choose section -->
+
+  <!-- our  section -->
+  <div class="our">
+    <div class="container">
+      <div class="row d_flex">
+        <div class="col-md-6"><div class="img_box"><figure><img src="./img/img4.jpg" alt="#" /></figure></div></div>
+        <div class="col-md-6">
+          <div class="our_box">
+            <div class="titlepage">
+              <h2><span class="text_norlam text-primary">La nostra</span><br>migliore colazione</h2>
+            </div>
+            <p>Ogni mattina serviamo una colazione continentale con prodotti freschi: croissant appena sfornati, succhi di frutta e specialità locali per iniziare la giornata con gusto.</p>
+            <a class="read_more" href="#">Leggi di più</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end our section -->
+
+  <!-- Room Start -->
+  <div id="room">
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center">
+          <h6 class="section-title text-primary text-uppercase">Le nostre Camere</h6>
+          <h1 class="mb-5">Esplora le nostre <span class="text-primary text-uppercase">Camere</span></h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="room-item shadow rounded overflow-hidden">
+              <div class="position-relative">
+                <img class="img-fluid" src="img/room-1.jpg" alt="">
+                <small class="position-absolute start-0 top-100 translate-middle-y bg-custom text-white rounded py-1 px-3 ms-4">$100/Notte</small>
+              </div>
+              <div class="p-4 mt-2">
+                <div class="d-flex justify-content-between mb-3">
+                  <h5 class="mb-0">Junior Suite</h5>
+                  <div class="ps-2">
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                  </div>
+                </div>
+                <div class="d-flex mb-3">
+                  <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 letti</small>
+                  <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 bagni</small>
+                  <small><i class="fa fa-wifi text-primary me-2"></i>Wi-Fi</small>
+                </div>
+                <p class="text-body mb-3">Camera matrimoniale con vista sul mare, balcone privato e bagno en-suite dotato di vasca idromassaggio per un relax totale.</p>
+                <div class="d-flex justify-content-between">
+                  <a class="btn btn-sm btn-primary rounded py-2 px-4 bg-custom border-0" href="./room.html">Visualizza dettagli</a>
+                  <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#contact">Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="room-item shadow rounded overflow-hidden">
+              <div class="position-relative">
+                <img class="img-fluid" src="img/room-2.jpg" alt="">
+                <small class="position-absolute start-0 top-100 translate-middle-y bg-custom text-white rounded py-1 px-3 ms-4">$120/Notte</small>
+              </div>
+              <div class="p-4 mt-2">
+                <div class="d-flex justify-content-between mb-3">
+                  <h5 class="mb-0">Suite Executive</h5>
+                  <div class="ps-2">
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                  </div>
+                </div>
+                <div class="d-flex mb-3">
+                  <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 letti</small>
+                  <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 bagni</small>
+                  <small><i class="fa fa-wifi text-primary me-2"></i>Wi-Fi</small>
+                </div>
+                <p class="text-body mb-3">Suite spaziosa con accesso diretto al giardino fiorito, bagno privato con doccia walk-in e arredi in stile mediterraneo.</p>
+                <div class="d-flex justify-content-between">
+                  <a class="btn btn-sm btn-primary rounded py-2 px-4 bg-custom border-0" href="./room.html">Visualizza dettagli</a>
+                  <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#contact">Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="room-item shadow rounded overflow-hidden">
+              <div class="position-relative">
+                <img class="img-fluid" src="img/room-3.jpg" alt="">
+                <small class="position-absolute start-0 top-100 translate-middle-y bg-custom text-white rounded py-1 px-3 ms-4">$140/Notte</small>
+              </div>
+              <div class="p-4 mt-2">
+                <div class="d-flex justify-content-between mb-3">
+                  <h5 class="mb-0">Super Deluxe</h5>
+                  <div class="ps-2">
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                    <small class="fa fa-star text-primary"></small>
+                  </div>
+                </div>
+                <div class="d-flex mb-3">
+                  <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 letti</small>
+                  <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 bagni</small>
+                  <small><i class="fa fa-wifi text-primary me-2"></i>Wi-Fi</small>
+                </div>
+                <p class="text-body mb-3">Open-space con cucina attrezzata, zona pranzo per 6 persone, soggiorno con TV satellitare e connessione gratuita.</p>
+                <div class="d-flex justify-content-between">
+                  <a class="btn btn-sm btn-primary rounded py-2 px-4 bg-custom border-0" href="./room.html">Visualizza dettagli</a>
+                  <a class="btn btn-sm btn-dark rounded py-2 px-4" href="#contact">Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Room End -->
+
+    <!-- about -->
+    <div id="about" class="about">
+      <div class="container-fluid">
+        <div class="row d_flex">
+          <div class="col-md-6">
+            <div class="about_text">
+              <div class="titlepage">
+                <h2><span class="text-primary">Chi siamo</span> del nostro B&B</h2>
+                <p>Villa Caruso è una proprietà indipendente di 150 m², composta da tre camere da letto, due bagni, ampio soggiorno e cucina moderna. Dotata di aria condizionata, parcheggio privato e accesso a una piscina a sfioro con vista sul Golfo, offre un'esperienza di lusso in posizione strategica.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6"><div class="about_img"><figure><img src="./img/banner.jpg" alt="#" /></figure></div></div>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+
+    <!-- footer -->
+    <footer id="contact">
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6" style="margin-bottom:20rem">
+              <div class="titlepage"><h2><span class="text-primary">Contattaci</span></h2></div>
+              <div class="cont"><h3>Per prenotare una camera</h3><p>Per informazioni e prenotazioni contattateci: servizio navetta a pagamento da/per l'aeroporto di Napoli e parcheggio privato incluso.</p></div>
+            </div>
+            <div class="col-md-6">
+              <form id="request" class="main_form">
+                <div class="row">
+                  <div class="col-md-12"><input class="contactus" placeholder="Nome e Cognome" type="text" name="Full Name"></div>
+                  <div class="col-md-12"><input class="contactus" placeholder="Email" type="email" name="Email"></div>
+                  <div class="col-md-12"><input class="contactus" placeholder="Numero di telefono" type="tel" name="Phone Number"></div>
+                  <div class="col-md-12"><textarea class="textarea" placeholder="Messaggio" name="Message">Messaggio</textarea></div>
+                  <div class="col-sm-12"><button class="send_btn" type="submit">Invia</button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="copyright"><div class="container"><div class="row"><div class="col-md-12">
+          <p>Copyright 2023 Tutti i diritti riservati a <a href="#">Agl property management</a>web  <a href="https://www.aglpropertymanagement.it" class="webdev">Villa Caruso</a></p>
+        </div></div></div></div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>
