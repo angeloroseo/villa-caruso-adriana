@@ -742,12 +742,21 @@ button {
   background: transparent !important;
 }
 
+/* Banner proporzionato e rimuove i quadratini neri */
+.banner_main {
+    background: url(./img/banner.jpg) no-repeat center center;
+    background-size: cover;       /* mantiene le proporzioni */
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* 
-|￣￣￣￣￣￣￣ |  
-|Sascha-WebDev|
-|＿＿＿＿＿ _＿_|
-(\__/) || 
-(•ㅅ•) || 
-/ 　 づ
-*/
+.banner_main h1,
+.banner_main span {
+    background: transparent !important;  /* toglie il rettangolo nero */
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+
